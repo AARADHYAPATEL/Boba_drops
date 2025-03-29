@@ -1,0 +1,23 @@
+[
+    {
+        "id": "73ff754f-a332-4dae-95f0-e2f84ce4c380",
+        "title": "no",
+        "timestamp": "2025-02-02 10-03-00",
+        "content": "No no no no",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "4e7c900c-62b8-4cd7-9adc-857f4859dcbf",
+        "title": "dahgf",
+        "timestamp": "2025-02-02 10-02-20",
+        "content": "fgyufgyiqdgbfyudgsfyuqgwb",
+        "sentiment": "Neutral"
+    },
+    {
+        "id": "b00c480c-2590-49bc-ba39-5d5e845d1214",
+        "title": "Normal day",
+        "timestamp": "2025-01-28 16-03-08",
+        "content": "My day went quite ok. Nothing much happened.",
+        "sentiment": "Positive"
+    }
+]
