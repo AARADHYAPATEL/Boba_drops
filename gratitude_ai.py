@@ -3,6 +3,7 @@ import requests
 import json
 import os
 from textblob import TextBlob
+import webview
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
 CHAT_HISTORY_FILE = "chat_history.json"
@@ -241,3 +242,6 @@ if st.button("Clear Chat History"):
     if os.path.exists(CHAT_HISTORY_FILE):
         os.remove(CHAT_HISTORY_FILE)
     st.rerun()
+
+webview.create_window("Streamlit App", "http://localhost:8501")
+webview.start()
