@@ -18,6 +18,7 @@ from google.auth.transport.requests import Request
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from email.mime.text import MIMEText
+import webview
 
 # Scopes required for sending email
 SCOPES = ['https://www.googleapis.com/auth/gmail.send']
@@ -752,3 +753,6 @@ if st.session_state.get("logged_in", False):
                     success_placeholder.empty()
             except Exception as e:
                 st.error(f"Failed to send email: {e}")
+
+webview.create_window("Streamlit App", "http://localhost:8501")
+webview.start()
