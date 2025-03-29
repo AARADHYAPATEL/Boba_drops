@@ -5,6 +5,7 @@ import os
 from streamlit_extras import add_vertical_space
 from streamlit_extras.stylable_container import stylable_container
 from streamlit_extras.let_it_rain import rain
+import webview
 
 # Initialize theme settings in session_state
 if "theme" not in st.session_state:
@@ -368,3 +369,5 @@ with tab2:
             st.session_state["course_progress"] = 0
             st.rerun()
 
+webview.create_window("Streamlit App", "http://localhost:8501")
+webview.start()
